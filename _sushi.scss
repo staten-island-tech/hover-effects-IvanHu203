@@ -1,0 +1,46 @@
+@import "_variables.scss";
+
+.sushi-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+sushi-gallery {
+  margin: 3rem;
+  position: relative;
+}
+
+.sushi-photo {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+  outline-offset: 1rem;
+  transition: all 0.3s;
+}
+
+.sushi-photo:hover {
+  transform: scale(1.3);
+  box-shadow: 0 3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem solid color(red);
+  z-index: 2;
+}
+
+.icecrsushi-gallery:hover .sushi-photo:not(:hover) {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+
+.sushi-photo-1 {
+  top: 70rem;
+  left: 40%;
+}
+
+.sushi-photo-2 {
+  top: 82rem;
+  right: 30%;
+}
+
+.sushi-photo-3 {
+  top: 78rem;
+  left: 35%;
+}

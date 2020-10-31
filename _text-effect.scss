@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+.text-effect {
+  background-image: url("../media/sparkle.png");
+  background-position: center;
+  color: transparent;
+  font-size: 8rem;
+  -webkit-background-clip: text;
+  transform: all 0.3s;
+}
+
+.text-effect:hover {
+  transform: skewY(-15deg);
+  letter-spacing: 2rem;
+}

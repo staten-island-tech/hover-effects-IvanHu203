@@ -1,0 +1,13 @@
+@import "_variables.scss";
+
+.komodo {
+  height: 12rem;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.komodo:hover {
+  border-radius: 0;
+  filter: sepia(100%);
+  transform: scale(1.3);
+}

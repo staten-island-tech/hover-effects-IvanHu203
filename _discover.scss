@@ -1,0 +1,33 @@
+@import "_variables.scss";
+
+.discover {
+  height: 30rem;
+  position: relative;
+}
+
+.discover-picture {
+  height: 30rem;
+  clip-path: circle();
+  transition: all 0.3s;
+}
+
+.discover-header {
+  font-size: 3rem;
+  opacity: 1;
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.discover:hover .discover-picture {
+  filter: sepia(90%);
+}
+
+.discover:hover .discover-header {
+  opacity: 1;
+  top: 50%;
+}
